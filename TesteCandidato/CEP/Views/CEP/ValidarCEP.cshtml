@@ -4,10 +4,6 @@
     ViewData["Title"] = "ValidarCEP";
 }
 
-<div class="align-content-center mb-3">
-    <a href="@Url.Action("Listar", "CEP")" class="btn btn-primary">Voltar</a>
-</div>
-
 <h1>Pesquisar CEP</h1>
 
 @if(!string.IsNullOrEmpty(ViewBag.Messagem)) {
@@ -25,6 +21,10 @@
         <br />
         <div class="align-content-center">
             <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </div>
+
+        <div class="align-content-center mt-3">
+            <a href="@Url.Action("Listar", "CEP")" class="btn btn-primary">Lista</a>
         </div>
     </form>
 }

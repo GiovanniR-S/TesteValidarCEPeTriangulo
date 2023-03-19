@@ -20,10 +20,39 @@ namespace TesteCandidatoTriangulo
         /// </summary>
         /// <param name="dadosTriangulo"></param>
         /// <returns>Retorna o resultado do calculo conforme regra acima</returns>
-        public int ResultadoTriangulo(string dadosTriangulo)
-        {
+        public int ResultadoTriangulo (string dadosTriangulo) {
+            
+            string[] linhas = dadosTriangulo.Split(new string[] { "\r\n", "\n", "[]" }, StringSplitOptions.RemoveEmptyEntries);
+            int[][] triangulo = new int[linhas.Length][];
+            for(int i = 0; i < linhas.Length; i++) {
+                string[] elementos = linhas[i].Split(' ');
+                triangulo[i] = new int[elementos.Length];
+                for(int j = 0; j < elementos.Length; j++) {
+                    triangulo[i][j] = int.Parse(elementos[j]);
+                }
+            }
 
-            return 0;
+            int[][] tabela = new int[triangulo.Length][];
+            for(int i = 0; i < triangulo.Length; i++) {
+                tabela[i] = new int[triangulo[i].Length];
+            }
+
+            tabela[0][0] = triangulo[0][0];
+  
+            for(int i = 1; i < triangulo.Length; i++) {
+                for(int j = 0; j < triangulo[i].Length; j++) {
+                    int valorEsquerda = (j > 0) ? tabela[i - 1][j - 1] : 0;
+                    int valorDireita = (j < triangulo[i - 1].Length) ? tabela[i - 1][j] : 0;
+                    tabela[i][j] = triangulo[i][j] + Math.Max(valorEsquerda, valorDireita);
+                }
+            }
+
+            int valorMaximo = 0;
+            for(int j = 0; j < tabela[triangulo.Length - 1].Length; j++) {
+                valorMaximo = Math.Max(valorMaximo, tabela[triangulo.Length - 1][j]);
+            }
+
+            return valorMaximo;
         }
     }
 }
