@@ -1,11 +1,17 @@
+using CEP.Interface;
 using CEP.Models;
+using CEP.Repository;
+using CEP.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<CEPS>();
+builder.Services.AddScoped<IRepositorioCep, CEPRepository>();
+builder.Services.AddScoped<ISerciesCep, ServicesCep>();
+
+builder.Services.AddScoped<ServicesCep>();
 
 var app = builder.Build();
 

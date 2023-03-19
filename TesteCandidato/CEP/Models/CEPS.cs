@@ -10,5 +10,6 @@
         public long Unidade { get; set; }
         public int IBGE { get; set; }
         public string GIA { get; set; }
+        public bool? Erro { get; set; }
     }
 }

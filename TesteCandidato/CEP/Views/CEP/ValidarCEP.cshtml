@@ -4,15 +4,31 @@
     ViewData["Title"] = "ValidarCEP";
 }
 
+<div class="align-content-center mb-3">
+    <a href="@Url.Action("Listar", "CEP")" class="btn btn-primary">Voltar</a>
+</div>
+
 <h1>Pesquisar CEP</h1>
 
-<form method="get" action="@Url.Action("BuscarPorCodigo", "Cep")">
-    <div class="form-group">
-        <label for="cep">CEP:</label>
-        <input type="text" class="form-control" id="cep" name="cep" value="@Model" placeholder="Digite o CEP" />
+@if(!string.IsNullOrEmpty(ViewBag.Messagem)) {
+    <div class="alert alert-danger mt-3 mb-3" role="alert">
+        @ViewBag.Messagem
     </div>
-    <button type="submit" class="btn btn-primary">Pesquisar</button>
-</form>
+}
+
+@using(Html.BeginForm("BuscarPorCodigo", "Cep", new { id = "Cep", @class = "align-content-center" }, FormMethod.Get)) {
+    <form class="form-text text-center">
+        <div class="form-group col-md-4">
+            <input pattern="\d{8}" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required type="text" maxlength="8" class="form-control" id="cep" name="cep" value="@Model" placeholder="Digite o CEP" autocomplete="off" />
+            
+        </div>
+        <br />
+        <div class="align-content-center">
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </div>
+    </form>
+}
+
 @if(Model != null) {
     <h2>Resultado da pesquisa</h2>
     <table class="table">
@@ -40,6 +56,12 @@
         </tr>
     </table>
 }
+
+<script>
+    document.getElementById("cep").oninvalid = function () {
+        this.setCustomValidity("CEP esta invalido");
+    };
+</script>
 
 @section Scripts {
     @{

@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\giova\Downloads\TesteCandidato\TesteCandidato\CEP
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/giova/Downloads/TesteCandidato/TesteCandidato/CEP/Views/CEP/ExibirEndereco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0VQXEV4aWJpckVuZGVyZWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/giova/Downloads/TesteCandidato/TesteCandidato/CEP/Views/CEP/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0VQXExpc3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/giova/Downloads/TesteCandidato/TesteCandidato/CEP/Views/CEP/ValidarCEP.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0VQXFZhbGlkYXJDRVAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
