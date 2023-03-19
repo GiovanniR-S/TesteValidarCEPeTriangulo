@@ -1,0 +1,48 @@
+﻿@model CEP.Models.CEPS
+
+@{
+    ViewData["Title"] = "ValidarCEP";
+}
+
+<h1>Pesquisar CEP</h1>
+
+<form method="get" action="@Url.Action("BuscarPorCodigo", "Cep")">
+    <div class="form-group">
+        <label for="cep">CEP:</label>
+        <input type="text" class="form-control" id="cep" name="cep" value="@Model" placeholder="Digite o CEP" />
+    </div>
+    <button type="submit" class="btn btn-primary">Pesquisar</button>
+</form>
+@if(Model != null) {
+    <h2>Resultado da pesquisa</h2>
+    <table class="table">
+        <tr>
+            <th>Código</th>
+            <th>Logradouro</th>
+            <th>Complemento</th>
+            <th>Bairro</th>
+            <th>Localidade</th>
+            <th>UF</th>
+            <th>Unidade</th>
+            <th>IBGE</th>
+            <th>GIA</th>
+        </tr>
+        <tr>
+            <td>@Model.Cep</td>
+            <td>@Model.Logradouro</td>
+            <td>@Model.Complemento</td>
+            <td>@Model.Bairro</td>
+            <td>@Model.Localidade</td>
+            <td>@Model.UF</td>
+            <td>@Model.Unidade</td>
+            <td>@Model.IBGE</td>
+            <td>@Model.GIA</td>
+        </tr>
+    </table>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
