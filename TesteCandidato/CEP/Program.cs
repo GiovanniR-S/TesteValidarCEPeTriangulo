@@ -21,18 +21,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.MapControllerRoute();
-
 app.UseAuthorization();
 
 app.UseEndpoints(endpoints => {
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(
-        name: "cep",
-        pattern: "api/cep/{cep}",
-        defaults: new { controller = "Cep", action = "BuscarPorCodigo" });
 });
 
 app.Run();
