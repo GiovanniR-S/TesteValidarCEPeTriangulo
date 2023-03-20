@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G9LXpawSx59UwQ3J97LNMcumiC5w2CZJBC5zHKIRky/ZlB0ivcp+xzGPzSZrE2W6OUqFSHwrgm9eZKkpuBjYtA==",
+  "dgSpecHash": "Y4ki9GDjrgUacKG/P0Zx0uFsQdFsKvyH2lznXjF6Q4fA5gb7CTqHnfOselgd6Rd5XcskBP7mp2d+ntb2IoyC8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\giova\\Downloads\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj",
+  "projectFilePath": "C:\\Users\\giova\\OneDrive\\Documentos\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\giova\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\giova\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

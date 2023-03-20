@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\giova\\Downloads\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj": {}
+    "C:\\Users\\giova\\OneDrive\\Documentos\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\giova\\Downloads\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj": {
+    "C:\\Users\\giova\\OneDrive\\Documentos\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\giova\\Downloads\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj",
+        "projectUniqueName": "C:\\Users\\giova\\OneDrive\\Documentos\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj",
         "projectName": "CEP",
-        "projectPath": "C:\\Users\\giova\\Downloads\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj",
+        "projectPath": "C:\\Users\\giova\\OneDrive\\Documentos\\TesteCandidato\\TesteCandidato\\CEP\\CEP.csproj",
         "packagesPath": "C:\\Users\\giova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\giova\\Downloads\\TesteCandidato\\TesteCandidato\\CEP\\obj\\",
+        "outputPath": "C:\\Users\\giova\\OneDrive\\Documentos\\TesteCandidato\\TesteCandidato\\CEP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\giova\\AppData\\Roaming\\NuGet\\NuGet.Config",
