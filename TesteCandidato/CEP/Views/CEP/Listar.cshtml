@@ -21,8 +21,8 @@
             <th>GIA</th>
         </tr>
         @foreach(var item in ViewBag.Cep) {
-            <tr>
-                <td><a href="@Url.Action("ExibirEndereco", "CEP")/@item.Cep">@item.Cep</a></td>
+            <tr class="pb-3 pt-3">
+                <td><a class="btn btn-primary" href="@Url.Action("ExibirEndereco", "CEP")/@item.Cep">@item.Cep</a></td>
                 <td>@item.Logradouro</td>
                 <td>@item.Complemento</td>
                 <td>@item.Bairro</td>
